@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MB Studios — Digital Brand & Web Development</title>
+  <meta name="description" content="MB Studios crafts bold digital brands and high-performance websites that make a lasting impression." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Calendly -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">
+      <img src="assets/Logo version 2.png" alt="MB Studios" class="nav-logo-img" />
+    </a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact" class="nav-cta">Start a Project</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#work" class="mobile-link">Work</a>
+    <a href="#contact" class="mobile-link">Start a Project</a>
+  </div>
+
+  <!-- ═══════════════════════════ HERO ══════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow-orb"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-headline">
+        <span class="line" id="heroLine1"></span>
+        <span class="line" id="heroLine2"></span>
+        <span class="line" id="heroLine3"></span>
+      </h1>
+
+      <p class="hero-sub" id="heroSub" style="opacity:0;">
+        From brand identity to full-stack web development — MB Studios turns your vision into a digital presence that works as hard as you do.
+      </p>
+
+      <div class="hero-actions" id="heroActions" style="opacity:0;">
+        <a href="#contact" class="btn btn-primary">Start a Project</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════ MARQUEE ══════════════════════ -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Brand Identity</span><span class="sep">//</span>
+      <span>Web Design</span><span class="sep">//</span>
+      <span>Web Development</span><span class="sep">//</span>
+      <span>UI / UX</span><span class="sep">//</span>
+      <span>Digital Strategy</span><span class="sep">//</span>
+      <span>SEO Optimization</span><span class="sep">//</span>
+      <span>Brand Identity</span><span class="sep">//</span>
+      <span>Web Design</span><span class="sep">//</span>
+      <span>Web Development</span><span class="sep">//</span>
+      <span>UI / UX</span><span class="sep">//</span>
+      <span>Digital Strategy</span><span class="sep">//</span>
+      <span>SEO Optimization</span><span class="sep">//</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ SERVICES ════════════════════ -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal-up">What We Do</p>
+        <h2 class="section-title reveal-up delay-1">
+          Every service designed<br /><em>for results.</em>
+        </h2>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal-up delay-1">
+          <div class="terminal-bar">
+            <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+            <span class="t-title">brand_identity.exe</span>
+          </div>
+          <div class="service-card-body">
+            <div class="service-number">01 // BRANDING</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="8" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2"/>
+                <line x1="15" y1="44" x2="33" y2="44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="24" y1="36" x2="24" y2="44" stroke="currentColor" stroke-width="2"/>
+                <circle cx="24" cy="22" r="7" stroke="currentColor" stroke-width="2"/>
+                <path d="M17 15L7 11M31 15L41 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Brand Identity</h3>
+            <p>Logos, color systems, typography, and brand guidelines that make you instantly recognizable and impossible to ignore.</p>
+            <div class="service-arrow">→</div>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up delay-2">
+          <div class="terminal-bar">
+            <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+            <span class="t-title">web_design.sh</span>
+          </div>
+          <div class="service-card-body">
+            <div class="service-number">02 // DESIGN</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="6" width="40" height="30" rx="3" stroke="currentColor" stroke-width="2"/>
+                <line x1="4" y1="14" x2="44" y2="14" stroke="currentColor" stroke-width="2"/>
+                <circle cx="10" cy="10" r="1.5" fill="currentColor"/>
+                <circle cx="16" cy="10" r="1.5" fill="currentColor"/>
+                <circle cx="22" cy="10" r="1.5" fill="currentColor"/>
+                <rect x="10" y="20" width="12" height="10" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                <line x1="26" y1="22" x2="38" y2="22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="26" y1="26" x2="34" y2="26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="14" y1="42" x2="34" y2="42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="24" y1="36" x2="24" y2="42" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Web Design</h3>
+            <p>Pixel-perfect, conversion-focused designs that reflect your brand and deliver an exceptional user experience on every device.</p>
+            <div class="service-arrow">→</div>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up delay-3">
+          <div class="terminal-bar">
+            <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+            <span class="t-title">web_dev.js</span>
+          </div>
+          <div class="service-card-body">
+            <div class="service-number">03 // DEV</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="14,19 8,24 14,29" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="34,19 40,24 34,29" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="28" y1="12" x2="20" y2="36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Fast, scalable, and secure websites and web applications built with modern technologies — crafted to perform and grow with you.</p>
+            <div class="service-arrow">→</div>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up delay-1">
+          <div class="terminal-bar">
+            <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+            <span class="t-title">ui_ux.fig</span>
+          </div>
+          <div class="service-card-body">
+            <div class="service-number">04 // UI/UX</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="18" cy="24" r="6" stroke="currentColor" stroke-width="2"/>
+                <line x1="30" y1="20" x2="38" y2="20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="30" y1="24" x2="38" y2="24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="30" y1="28" x2="35" y2="28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>UI / UX Design</h3>
+            <p>User research, wireframes, and interactive prototypes that eliminate friction and turn visitors into loyal customers.</p>
+            <div class="service-arrow">→</div>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up delay-2">
+          <div class="terminal-bar">
+            <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+            <span class="t-title">strategy.md</span>
+          </div>
+          <div class="service-card-body">
+            <div class="service-number">05 // GROWTH</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="6,36 16,22 24,28 32,16 42,20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="42" cy="20" r="3" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Digital Strategy</h3>
+            <p>Data-driven roadmaps for your digital presence — SEO, analytics, and growth planning that put your brand in front of the right audience.</p>
+            <div class="service-arrow">→</div>
+          </div>
+        </div>
+
+        <div class="service-card service-card--cta reveal-up delay-3">
+          <div class="terminal-bar">
+            <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+            <span class="t-title">start_project.exe</span>
+          </div>
+          <div class="service-card-body">
+            <p class="cta-label">// Ready to ship something great?</p>
+            <h3>Let's build something great together.</h3>
+            <a href="#contact" class="btn btn-primary">Start a Project</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ ABOUT ════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <p class="section-label reveal-up">About MB Studios</p>
+          <h2 class="section-title reveal-up delay-1">
+            Built for brands<br />that mean <em>business.</em>
+          </h2>
+          <div class="about-stats reveal-up delay-2">
+            <div class="stat">
+              <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+              <p>Projects Delivered</p>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span>
+              <p>Client Satisfaction</p>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+              <p>Years Experience</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-right reveal-up delay-2">
+          <p>MB Studios is a boutique digital agency specializing in brand identity and web development. We partner with entrepreneurs, startups, and growing businesses to craft digital presences that don't just look good — they <em>perform.</em></p>
+          <p>Every project is approached with a mix of strategic thinking, design precision, and technical excellence. We believe your website should be your hardest-working employee — available 24/7, always making a great first impression.</p>
+          <p>From initial concept to final launch, we handle every detail so you can focus on what you do best: running your business.</p>
+          <button class="btn btn-ghost" onclick="openCalendly()">Schedule a Free Discovery Call →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ WORK ══════════════════════════ -->
+  <section id="work">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal-up">Our Work</p>
+        <h2 class="section-title reveal-up delay-1">
+          Projects we're<br /><em>proud of.</em>
+        </h2>
+      </div>
+
+      <!-- Featured Project -->
+      <div class="featured-project reveal-up delay-1">
+
+        <div class="featured-project-devices">
+          <!-- Browser Mockup -->
+          <div class="mockup-browser">
+            <div class="mockup-browser-bar">
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+              <div class="mockup-url">naturalbalancewellness.com</div>
+            </div>
+            <div class="mockup-browser-screen">
+              <img src="assets/naturalbalance web.png" alt="Natural Balance Wellness — Web" />
+            </div>
+          </div>
+
+          <!-- Phone Mockup -->
+          <div class="mockup-phone">
+            <div class="mockup-phone-frame">
+              <div class="mockup-phone-notch"></div>
+              <div class="mockup-phone-screen">
+                <img src="assets/naturalbalance mobile.png" alt="Natural Balance Wellness — Mobile" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-project-info">
+          <span class="work-tag">Web Design &amp; Development</span>
+          <h3>Natural Balance Wellness</h3>
+          <p>Full website design and development for Brooklyn's premier massage &amp; wellness center. Responsive across all devices, built to convert visitors into booked appointments.</p>
+          <div class="featured-project-tags">
+            <span>Web Design</span>
+            <span>Mobile Responsive</span>
+            <span>UI / UX</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- More Projects Placeholder -->
+      <div class="work-grid work-grid--more">
+        <div class="work-card reveal-up delay-1">
+          <div class="work-img">
+            <div class="work-placeholder"><span>Coming Soon</span></div>
+          </div>
+          <div class="work-meta">
+            <span class="work-category">Branding</span>
+            <h3>Next Project</h3>
+          </div>
+        </div>
+        <div class="work-card reveal-up delay-2">
+          <div class="work-img">
+            <div class="work-placeholder"><span>Coming Soon</span></div>
+          </div>
+          <div class="work-meta">
+            <span class="work-category">Web Design</span>
+            <h3>Next Project</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTACT ══════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-left">
+          <p class="section-label reveal-up">Get In Touch</p>
+          <h2 class="section-title reveal-up delay-1">
+            Let's start your<br /><em>next project.</em>
+          </h2>
+          <p class="contact-sub reveal-up delay-2">Fill out the form and we'll be in touch within 24 hours. Prefer to talk first? Book a free 30-minute discovery call.</p>
+
+          <div class="contact-options reveal-up delay-3">
+            <button class="calendly-btn" onclick="openCalendly()">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="4" width="18" height="17" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <line x1="3" y1="9" x2="21" y2="9" stroke="currentColor" stroke-width="1.5"/>
+                <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="12" cy="15" r="1.5" fill="currentColor"/>
+              </svg>
+              Book a Free Discovery Call
+            </button>
+          </div>
+        </div>
+
+        <div class="contact-right reveal-up delay-2">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-terminal-bar">
+              <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+              <span class="form-terminal-title">contact.form — ACCEPTING INPUT</span>
+            </div>
+            <div class="form-inner">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option value="Brand Identity">Brand Identity</option>
+                <option value="Web Design">Web Design</option>
+                <option value="Web Development">Web Development</option>
+                <option value="UI / UX Design">UI / UX Design</option>
+                <option value="Digital Strategy">Digital Strategy</option>
+                <option value="Full Package">Full Package (Brand + Web)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Project Budget</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Select a range...</option>
+                <option value="Under $1,000">Under $1,000</option>
+                <option value="$1,000 – $3,000">$1,000 – $3,000</option>
+                <option value="$3,000 – $7,500">$3,000 – $7,500</option>
+                <option value="$7,500+">$7,500+</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Project</label>
+              <textarea id="message" name="message" placeholder="What are you looking to build or improve? Any details about your timeline, goals, or vision..." required rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loading" style="display:none;">Sending...</span>
+            </button>
+            <p class="form-success" id="formSuccess" style="display:none;">
+              ✓ Message sent! We'll be in touch within 24 hours.
+            </p>
+            <p class="form-error" id="formError" style="display:none;">
+              ERR: Transmission failed. Retry or email directly.
+            </p>
+            </div><!-- /.form-inner -->
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ══════════════════════ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/Logo version 2.png" alt="MB Studios" class="footer-logo" />
+          <p>Digital Brand &amp; Web Development Services</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Services</h5>
+            <a href="#services">Brand Identity</a>
+            <a href="#services">Web Design</a>
+            <a href="#services">Web Development</a>
+            <a href="#services">UI / UX Design</a>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+            <button class="footer-link-btn" onclick="openCalendly()">Book a Call</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> MB Studios. All rights reserved.</p>
+        <p>Designed &amp; Built by MB Studios</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
